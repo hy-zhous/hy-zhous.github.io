@@ -1,0 +1,58 @@
+/* loading.css */
+
+@import url("style.css");
+
+.loadings {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+    backdrop-filter: blur(50px);
+    background: #25252577;
+    border: 1px solid #4b4b4bbb;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 5px;
+    perspective: 200px;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.loading {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 50px;
+    perspective: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.loading:before, .loading:after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: "";
+    animation: jumping 0.5s infinite alternate;
+    background: rgba(0, 0, 0, 0);
+}
+  
+.loading:before {
+    left: 0;
+}
+  
+.loading:after {
+    right: 0;
+    animation-delay: 0.15s;
+}
